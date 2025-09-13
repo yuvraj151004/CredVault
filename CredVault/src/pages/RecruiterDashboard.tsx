@@ -10,6 +10,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Search, Users, Bookmark, Eye, Filter, Download, Star, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import SavedProfilesModal from "@/components/dialogs/SavedProfilesModal";
+
 
 const RecruiterDashboard: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -27,7 +29,7 @@ const RecruiterDashboard: React.FC = () => {
   const students = [
     {
       id: 1,
-      name: 'Alex Kumar',
+      name: 'Ajay Kumar',
       avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=alex',
       department: 'Computer Science',
       year: '4th Year',
@@ -42,7 +44,7 @@ const RecruiterDashboard: React.FC = () => {
     },
     {
       id: 2,
-      name: 'Sarah Chen',
+      name: 'Sarah Khan',
       avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=sarah',
       department: 'Electronics',
       year: '4th Year',
@@ -72,7 +74,7 @@ const RecruiterDashboard: React.FC = () => {
     },
     {
       id: 4,
-      name: 'Emma Wilson',
+      name: 'Ananya Bhatt',
       avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=emma',
       department: 'Mechanical',
       year: '4th Year',
@@ -267,7 +269,7 @@ const RecruiterDashboard: React.FC = () => {
                     <div className="text-center py-8 text-muted-foreground">
                       <Bookmark className="h-12 w-12 mx-auto mb-3 opacity-50" />
                       <p>24 saved profiles</p>
-                      <Button variant="outline" className="mt-3" onClick={() => toast({ title: "Saved Profiles", description: "Viewing all saved profiles..." })}>View All Saved</Button>
+                      <SavedProfilesModal />
                     </div>
                   </CardContent>
                 </Card>
