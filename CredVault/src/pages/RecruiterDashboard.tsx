@@ -11,6 +11,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Search, Users, Bookmark, Eye, Filter, Download, Star, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import SavedProfilesModal from "@/components/dialogs/SavedProfilesModal";
+import ShortlistModal from "@/components/dialogs/ShortlistModal";
+
 
 
 const RecruiterDashboard: React.FC = () => {
@@ -281,7 +283,8 @@ const RecruiterDashboard: React.FC = () => {
                     <div className="text-center py-8 text-muted-foreground">
                       <Star className="h-12 w-12 mx-auto mb-3 opacity-50" />
                       <p>8 shortlisted candidates</p>
-                      <Button variant="recruiter" className="mt-3" onClick={() => toast({ title: "Shortlist Review", description: "Opening shortlist review..." })}>Review Shortlist</Button>
+                      <ShortlistModal />
+
                     </div>
                   </CardContent>
                 </Card>
