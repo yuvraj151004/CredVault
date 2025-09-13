@@ -58,10 +58,10 @@ const FacultyDashboard: React.FC = () => {
   ];
 
   const recentActivity = [
-    { action: 'Approved', student: 'John Doe', document: 'Python Certification', time: '10 min ago' },
-    { action: 'Commented', student: 'Jane Smith', document: 'Project Report', time: '1 hour ago' },
-    { action: 'Rejected', student: 'Mike Johnson', document: 'Workshop Certificate', time: '2 hours ago' },
-    { action: 'Approved', student: 'Lisa Wang', document: 'Research Paper', time: '3 hours ago' }
+    { action: 'Approved', student: 'Yuvraj Singh', document: 'Python Certification', time: '10 min ago' },
+    { action: 'Commented', student: 'Mahi Sharma', document: 'Project Report', time: '1 hour ago' },
+    { action: 'Rejected', student: 'Saral Jain', document: 'Workshop Certificate', time: '2 hours ago' },
+    { action: 'Approved', student: 'Ananniya Acharya', document: 'Research Paper', time: '3 hours ago' }
   ];
 
   const getPriorityColor = (priority: string) => {
