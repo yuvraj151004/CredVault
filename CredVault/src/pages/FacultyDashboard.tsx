@@ -25,7 +25,7 @@ const FacultyDashboard: React.FC = () => {
   const pendingSubmissions = [
     { 
       id: 1, 
-      student: 'Alex Kumar', 
+      student: 'Avneesh Singh', 
       title: 'AWS Cloud Practitioner Certificate', 
       type: 'Certificate', 
       submitted: '2 hours ago',
@@ -33,7 +33,7 @@ const FacultyDashboard: React.FC = () => {
     },
     { 
       id: 2, 
-      student: 'Sarah Chen', 
+      student: 'Yuvraj Singh', 
       title: 'Internship Completion - Microsoft', 
       type: 'Experience', 
       submitted: '5 hours ago',
@@ -49,7 +49,7 @@ const FacultyDashboard: React.FC = () => {
     },
     { 
       id: 4, 
-      student: 'Emma Wilson', 
+      student: 'Keshav Singh', 
       title: 'Full Stack Development Course', 
       type: 'Course', 
       submitted: '2 days ago',
