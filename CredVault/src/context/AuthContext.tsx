@@ -35,7 +35,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     if (email === 'a@gmail.com' && password === '123456') {
       const roleNames = {
         student: 'Mursaleen Siddiqui',
-        faculty: 'Dr. Anurag PAndey',
+        faculty: 'Dr. Anurag Pandey',
         admin: 'Rahul Yadav',
         recruiter: 'Sudhanshu Patel - TCS'
       };
