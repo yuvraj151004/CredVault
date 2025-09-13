@@ -3,28 +3,21 @@ import {
     DialogContent,
     DialogHeader,
     DialogTitle,
-    DialogTrigger,
   } from "@/components/ui/dialog";
-  import { Button } from "@/components/ui/button";
-  import { ScrollArea } from "@/components/ui/scroll-area";
   import { Card, CardContent } from "@/components/ui/card";
+  import { ScrollArea } from "@/components/ui/scroll-area";
   import { CheckCircle2 } from "lucide-react";
   
-  export default function ApprovedModal() {
-    // Dummy approved documents list
-    const approvedDocs = [
-      { id: 1, title: "Research Paper - AI", date: "Sept 10, 2025" },
-      { id: 2, title: "Project Report - Cloud Computing", date: "Sept 8, 2025" },
-      { id: 3, title: "Hackathon Certificate", date: "Sept 5, 2025" },
-      { id: 4, title: "Workshop Completion - React", date: "Sept 3, 2025" },
-    ];
+  const approvedDocs = [
+    { id: 1, title: "Python Certification", student: "Yuvraj Singh", date: "Sept 10, 2025" },
+    { id: 2, title: "Research Paper - AI", student: "Ananniya Acharya", date: "Sept 8, 2025" },
+    { id: 3, title: "Workshop Certificate", student: "Raj Patel", date: "Sept 7, 2025" },
+    { id: 4, title: "Project Report", student: "Mahi Sharma", date: "Sept 5, 2025" },
+  ];
   
+  export default function ApprovedModal({ open, onOpenChange }) {
     return (
-      <Dialog>
-        <DialogTrigger asChild>
-          <Button variant="outline">View All Approved</Button>
-        </DialogTrigger>
-  
+      <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
             <DialogTitle>All Approved Documents</DialogTitle>
@@ -40,7 +33,7 @@ import {
                       <div>
                         <p className="font-medium">{doc.title}</p>
                         <p className="text-sm text-muted-foreground">
-                          Approved on {doc.date}
+                          {doc.student} • Approved on {doc.date}
                         </p>
                       </div>
                     </div>
