@@ -10,6 +10,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Clock, FileText, Users, MessageSquare, Download, Eye } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import ApprovedModal from "@/components/dialogs/ApprovedModal";
+import ApprovedModal from "@/components/dialogs/ApprovedModal";
+
 
 const FacultyDashboard: React.FC = () => {
   const [approvedDialogOpen, setApprovedDialogOpen] = useState(false);
