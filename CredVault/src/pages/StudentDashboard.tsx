@@ -23,10 +23,10 @@ const StudentDashboard: React.FC = () => {
   ];
 
   const submissions = [
-    { id: 1, title: 'Data Structures Certificate', type: 'Certificate', status: 'approved', date: '2024-01-15', faculty: 'Dr. Smith' },
-    { id: 2, title: 'Hackathon Winner - TechFest 2024', type: 'Achievement', status: 'approved', date: '2024-01-10', faculty: 'Prof. Johnson' },
-    { id: 3, title: 'Machine Learning Course', type: 'Course', status: 'pending', date: '2024-01-08', faculty: 'Dr. Wilson' },
-    { id: 4, title: 'Internship Completion Letter', type: 'Experience', status: 'rejected', date: '2024-01-05', faculty: 'Dr. Brown' },
+    { id: 1, title: 'Data Structures Certificate', type: 'Certificate', status: 'approved', date: '2024-01-15', faculty: 'Dr. Ajay' },
+    { id: 2, title: 'Hackathon Winner - TechFest 2024', type: 'Achievement', status: 'approved', date: '2024-01-10', faculty: 'Prof. Kumar' },
+    { id: 3, title: 'Machine Learning Course', type: 'Course', status: 'pending', date: '2024-01-08', faculty: 'Dr. Sharma' },
+    { id: 4, title: 'Internship Completion Letter', type: 'Experience', status: 'rejected', date: '2024-01-05', faculty: 'Dr. Singh' },
   ];
 
   const badges = [
