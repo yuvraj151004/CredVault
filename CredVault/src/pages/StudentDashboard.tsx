@@ -9,6 +9,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Progress } from '@/components/ui/progress';
 import { Upload, FileText, Award, TrendingUp, CheckCircle, Clock, XCircle, Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import PortfolioPreviewModal from "@/components/PortfolioPreviewModal";
+
 
 const StudentDashboard: React.FC = () => {
   const [uploadProgress, setUploadProgress] = useState(75);
@@ -120,10 +122,7 @@ const StudentDashboard: React.FC = () => {
                       </div>
                       <Progress value={uploadProgress} className="w-full" />
                       <div className="flex space-x-2">
-                        <Button variant="outline" size="sm" onClick={() => toast({ title: "Portfolio Preview", description: "Opening portfolio preview..." })}>
-                          <FileText className="mr-2 h-4 w-4" />
-                          Preview Portfolio
-                        </Button>
+                        <PortfolioPreviewModal />
                         <Button variant="student" size="sm" onClick={() => toast({ title: "Download Started", description: "Your portfolio PDF is downloading." })}>
                           <Download className="mr-2 h-4 w-4" />
                           Download PDF
