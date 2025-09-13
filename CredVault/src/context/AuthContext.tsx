@@ -34,10 +34,10 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     // Demo login - accepts a@gmail.com with password 123456 for all roles
     if (email === 'a@gmail.com' && password === '123456') {
       const roleNames = {
-        student: 'Alex Student',
-        faculty: 'Dr. Sarah Faculty',
-        admin: 'John Admin',
-        recruiter: 'Emma Recruiter'
+        student: 'Mursaleen Siddiqui',
+        faculty: 'Dr. Anurag PAndey',
+        admin: 'Rahul Yadav',
+        recruiter: 'Sudhanshu Patel - TCS'
       };
 
       setUser({
