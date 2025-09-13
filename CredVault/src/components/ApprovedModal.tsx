@@ -15,7 +15,12 @@ import {
     { id: 4, title: "Project Report", student: "Mahi Sharma", date: "Sept 5, 2025" },
   ];
   
-  export default function ApprovedModal({ open, onOpenChange }) {
+  interface ApprovedModalProps {
+    open: boolean;
+    onOpenChange: (open: boolean) => void;
+  }
+  
+  export default function ApprovedModal({ open, onOpenChange }: ApprovedModalProps) {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogContent className="max-w-2xl">
