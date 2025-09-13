@@ -11,10 +11,8 @@ import { CheckCircle, Clock, FileText, Users, MessageSquare, Download, Eye } fro
 import { useToast } from '@/hooks/use-toast';
 import ApprovedModal from "@/components/dialogs/ApprovedModal";
 
-const [approvedDialogOpen, setApprovedDialogOpen] = useState(false);
-
-
 const FacultyDashboard: React.FC = () => {
+  const [approvedDialogOpen, setApprovedDialogOpen] = useState(false);
   const [reviewDialogOpen, setReviewDialogOpen] = useState(false);
   const [reportDialogOpen, setReportDialogOpen] = useState(false);
   const [selectedSubmission, setSelectedSubmission] = useState<any>(null);
