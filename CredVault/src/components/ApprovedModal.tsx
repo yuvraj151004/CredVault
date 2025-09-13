@@ -3,7 +3,9 @@ import {
     DialogContent,
     DialogHeader,
     DialogTitle,
+    DialogTrigger,
   } from "@/components/ui/dialog";
+  import { Button } from "@/components/ui/button";
   import { Card, CardContent } from "@/components/ui/card";
   import { ScrollArea } from "@/components/ui/scroll-area";
   import { CheckCircle2 } from "lucide-react";
@@ -15,14 +17,16 @@ import {
     { id: 4, title: "Project Report", student: "Mahi Sharma", date: "Sept 5, 2025" },
   ];
   
-  interface ApprovedModalProps {
-    open: boolean;
-    onOpenChange: (open: boolean) => void;
-  }
-  
-  export default function ApprovedModal({ open, onOpenChange }: ApprovedModalProps) {
+  export default function ApprovedModal() {
     return (
-      <Dialog open={open} onOpenChange={onOpenChange}>
+      <Dialog>
+        {/* This trigger replaces your "View All Approved" button */}
+        <DialogTrigger asChild>
+          <Button variant="outline" size="sm">
+            View All Approved
+          </Button>
+        </DialogTrigger>
+  
         <DialogContent className="max-w-2xl">
           <DialogHeader>
             <DialogTitle>All Approved Documents</DialogTitle>
