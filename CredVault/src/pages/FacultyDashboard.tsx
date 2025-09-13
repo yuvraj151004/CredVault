@@ -180,13 +180,7 @@ const FacultyDashboard: React.FC = () => {
                     <div className="text-center py-8 text-muted-foreground">
                       <CheckCircle className="h-12 w-12 mx-auto mb-3 opacity-50" />
                       <p>12 documents approved this week</p>
-                      <Button 
-                        variant="outline" 
-                        className="mt-3" 
-                        onClick={() => setApprovedDialogOpen(true)}
-                      >
-                          View All Approved
-                      </Button>  
+                      <ApprovedModal />
                     </div>
                   </CardContent>
                 </Card>
