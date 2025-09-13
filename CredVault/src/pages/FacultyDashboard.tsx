@@ -9,6 +9,8 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CheckCircle, Clock, FileText, Users, MessageSquare, Download, Eye } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import ApprovedModal from "@/components/dialogs/ApprovedModal";
+
 
 const FacultyDashboard: React.FC = () => {
   const [reviewDialogOpen, setReviewDialogOpen] = useState(false);
@@ -178,7 +180,7 @@ const FacultyDashboard: React.FC = () => {
                     <div className="text-center py-8 text-muted-foreground">
                       <CheckCircle className="h-12 w-12 mx-auto mb-3 opacity-50" />
                       <p>12 documents approved this week</p>
-                      <Button variant="outline" className="mt-3" onClick={() => toast({ title: "Approved Documents", description: "Viewing all approved documents..." })}>View All Approved</Button>
+                      <ApprovedModal />
                     </div>
                   </CardContent>
                 </Card>
