@@ -21,7 +21,11 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-4">
-          <div className={`h-8 w-8 rounded-lg ${getRoleColor(user?.role || '')}`} />
+          <img
+            src="/logo.png"
+            alt="CredVault Logo"
+            className="h-10 w-10"
+          />
           <div>
             <h1 className="font-bold text-lg">CredVault</h1>
             <p className="text-xs text-muted-foreground capitalize">
